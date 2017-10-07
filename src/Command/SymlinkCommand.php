@@ -32,7 +32,7 @@ class SymlinkCommand extends ContainerAwareCommand
         $localPath = sprintf('%s/../Resources/public/vendor/tinymce', __DIR__);
         $this->getFilesystem()->remove($localPath);
 
-        $tinymcePath = sprintf('%s/../vendor/tinymce/tinymce', $this->getContainer()->getParameter('kernel.root_dir'));
+        $tinymcePath = sprintf('%s/../vendor/helvethor/tinymce', $this->getContainer()->getParameter('kernel.root_dir'));
 
         $this->getFilesystem()->symlink($tinymcePath, $localPath, true);
         if (!file_exists($localPath)) {
