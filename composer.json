@@ -34,9 +34,5 @@
     },
     "autoload": {
         "psr-4": { "Stfalcon\\Bundle\\TinymceBundle\\": "src/" }
-    },
-	"respositories": {
-		"type": "vcs",
-		"url": "https://github.com/helvethor/tinymce.git"
-	}
+    }
 }
